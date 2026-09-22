@@ -1,12 +1,17 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { Header } from './header/header';
+import { Activities } from './activities/activities';
+import { Progress } from './progress/progress';
+
 
 @Component({
-  imports: [RouterOutlet],
   selector: 'app-root',
+  imports: [Header, Activities,Progress],
   styleUrl: './app.css',
   templateUrl: './app.html',
 })
+
 export class App {
-  protected readonly title = signal('first-angular-project');
+    completedCount = 0;
+    totalActivities = 0;
 }

@@ -1,0 +1,19 @@
+
+.app {
+  background-image: url('/leaves.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin: 0px;
+  align-items: start;
+}
+
+

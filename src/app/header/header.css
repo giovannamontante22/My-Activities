@@ -1,0 +1,19 @@
+header {
+ background-color: rgb(86, 202, 148);
+  color: white;
+  padding: 60px;
+  margin: 20px;
+  text-align: center;
+  border-radius: 20px;
+   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  margin: 0;
+  font-size: 50px;
+}
+
+.subtitle {
+  font-size: 20px;
+  margin-top: 10px;
+}

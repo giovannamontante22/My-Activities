@@ -1,0 +1,28 @@
+<div class="activities">
+  <h2>My Activities</h2>
+  
+
+  <input type="text" placeholder="Write an activity" [(ngModel)]="newActivity">
+  <button class="add-button" (click)="addActivity()">Add Activity</button>
+  <button class="delete-button" (click)="deleteActivity()">Delete Activity</button>
+  
+ <div class="activity-list">
+
+  @for (activity of activities; track activity) {
+    <div class="activity-item">
+      <input
+        type="checkbox"
+        [checked]="activity.completed"
+        (click)="activity.completed = !activity.completed; onActivityChange()"
+      >
+
+      <span>{{ activity.title }}</span>
+    </div>
+  }
+
+</div>
+
+<p>Completed Activities: {{ completedCount }}</p>
+<button  class="reset-button" (click)="resetCount()"> Reset the count </button>
+
+</div>
